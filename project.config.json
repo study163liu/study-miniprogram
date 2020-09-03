@@ -1,0 +1,141 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": false,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wx763beda4fc489a2d",
+	"projectname": "study-miniprogram",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "测试页",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "模块化",
+					"pathName": "pages/module/module",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "下拉刷新",
+					"pathName": "pages/pull/pull",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录页",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "webview",
+					"pathName": "pages/webview/webview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "分享页",
+					"pathName": "pages/share/share",
+					"query": "",
+					"scene": 1000
+				},
+				{
+					"id": -1,
+					"name": "打开群0带shareTicket的分享",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": 1044,
+					"shareInfo": {
+						"groupName": "测试模拟群0",
+						"shareName": "fiZYtpO78kivN1xqwJf6PBlP706e6ARxLflr3e5-Vn8@cr4dev",
+						"shareKey": "173XiqL2e89zZIaeZtMlidAB3MpcFKVYXNN6Qm7i2C0LDUj4cmXbEuC_6ruMD29VtKga4vzpIEjI9yTTglR4lA~~"
+					}
+				},
+				{
+					"id": -1,
+					"name": "打开群1带shareTicket的分享",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": 1044,
+					"shareInfo": {
+						"groupName": "测试模拟群1",
+						"shareName": "fiZYtpO78kivN1xqwJf6PNa5g02m7-kpyLYn-r2bknk@cr4dev",
+						"shareKey": "wDM8frOUn0RjUbM0SYKF9xQKHB6os1Xo_lAHrCT3bNYXJypLJN7vBUu8A_av4FLoNgNdBJjx4hD7CrKxnYRrRQ~~"
+					}
+				},
+				{
+					"id": 8,
+					"name": "笔记聚合页",
+					"pathName": "pages/booknote/booknote",
+					"query": "shareReadId=123",
+					"scene": null
+				}
+			]
+		}
+	}
+}

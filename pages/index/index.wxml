@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator class="nav" url="/pages/login/login">登录页</navigator>
+  <navigator class="nav" url="/packageA/pages/webview/webview">webview页(正文页)</navigator>
+  <navigator class="nav" url="/packageA/pages/share/share">分享页</navigator>
+  <navigator class="nav" url="/pages/pull/pull">wxs下拉刷新页</navigator>
+  <navigator class="nav" url="/pages/booknote/booknote">笔记页</navigator>
+</view>

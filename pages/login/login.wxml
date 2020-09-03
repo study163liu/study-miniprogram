@@ -1,0 +1,71 @@
+<view class="login_container">
+  <image class="container_bg_img" src="/images/index_bg.jpg" style="left: -{{transLeft}}px"/>
+  <template is="{{show}}" data="{{indexAnimateClass,selectAnimateClass,hasSafeArea,opacityAni,isLogin,bookList,bookIndex}}" />
+</view>
+
+<template name="index">
+  <view class="index">
+    <image class="index_header {{indexAnimateClass}}" src="/images/index-tittle.png"/>
+    <text class="index_soul {{indexAnimateClass}}">有趣的灵魂终将相遇</text>
+    <view class="index_content">
+      <view class="index_girl_box {{indexAnimateClass}}">
+        <image class="index_content_girl" src="/images/mgirl.png" />
+      </view>
+      <image class="index_person_left {{indexAnimateClass}}" bindtransitionend="onTransitionEnd" src="/images/index-boy1-colorful.png" />
+      <image class="index_person_right {{indexAnimateClass}}" src="/images/index-boy2.png" />
+    </view>
+    <view class="index_footer_box">
+      <view class="index_footer {{hasSafeArea && 'hasSafaArea'}}"  animation="{{opacityAni}}">
+        <text class="index_text">没有人是一座 <text class="index_text_des">孤岛</text></text>
+        <text class="index_text index_pading">每本书都是一个 <text class="index_text_des">世界</text></text>
+        <button class="index_login" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" wx:if="{{!isLogin}}">
+          <custom-button type="square">
+            <text class="index_start_text">开始</text>
+          </custom-button>
+        </button>
+        <view class="index_login" wx:else bindtap="goSelect">
+          <custom-button type="square">
+            <text class="index_start_text">开始</text>
+          </custom-button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="select">
+  <view class="select">
+    <image class="select_book_img {{selectAnimateClass}}" src="/images/book-matchtittle.png" ontap="handleTip" wx:if="{{!clicked}}" />
+    <view class="select_content {{selectAnimateClass}}">
+      <image class='select_swiper_left_arrow {{bookIndex === 0 && "select_swiper_disable"}}' src='/images/book-cutover.png' />
+      <swiper class="select_swiper" bindchange="onSwiperChange">
+        <block wx:for="{{bookList}}" wx:key="bookId">
+          <swiper-item class="select_swiper_item">
+            <view class="select_book_box">
+              <image class="select_content_img" src="/images/Book-cover.png" />
+              <image class="select_book_shadow" src="/images/Book-shadow.png" />
+              <image class="select_book_cover" src="{{item.bookCover}}" />
+            </view>
+            <view class="select_bookName_box">
+              <view class="select_bookName">{{item.bookName}}</view>
+            </view>
+            <view class="select_author">
+              <image src="/images/juxing.png" class="select_author_img" />
+              <text class="select_author_text">{{item.authors}}</text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+      <image class='select_swiper_arrow {{(bookIndex + 1 ===  bookList.length) && "select_swiper_disable"}}' src='/images/book-cutover.png' />
+    </view>
+    <view class="select_footer {{hasSafeArea && 'hasSafaArea'}}" animation="{{opacityAni}}">
+      <text class="select_text">{{bookList[bookIndex].recommend}}</text>
+      <text class="select_num">{{bookList[bookIndex].maleCount}} 男生 & {{bookList[bookIndex].femaleCount}} 女生已报名</text>
+      <view bindtap="goShare">
+        <custom-button type="square">
+          <text class="index_start_text" >选我</text>
+        </custom-button>
+      </view>
+    </view>
+  </view>
+</template>

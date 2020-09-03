@@ -1,0 +1,6 @@
+.info{
+  word-break: break-all;
+  white-space: pre-wrap;
+  height: 2000rpx;
+  background: #ccc;
+}

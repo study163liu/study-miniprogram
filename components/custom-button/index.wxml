@@ -1,0 +1,23 @@
+<template is='{{type}}' data='{{status}}'></template>
+
+<template name='whiter'>
+  <view class='whiter {{ status === "disable" ? "square_disable" : ""}}'>
+    <image src='/images/button-invite.png' class='whiter_img'/>
+    <slot></slot>
+  </view>
+</template>
+
+<template name='blue'>
+  <view class='whiter {{ status === "disable" ? "square_disable" : ""}}'>
+    <image src='/images/button-bitmap.png' class='whiter_img'/>
+    <slot></slot>
+  </view>
+</template>
+
+<template name='square'>
+  <view class='square {{ status === "disable" ? "square_disable" : ""}}'>
+    <image src='{{status === "normal" ? "/images/button-book.png" : "/images/button-submit-disbal.png"}}' 
+      class='square_img'/>
+    <slot></slot>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<wxs module="test" src="./test.wxs"></wxs>
+<scroll-view 
+  class="pulldown-wrapper"
+  bindtouchstart="{{test.touchStart}}" 
+  bindtouchmove="{{test.touchMove}}" 
+  bindtouchend="{{test.touchEnd}}"
+  change:prop="{{test.monitorShowRefresh}}" 
+  prop="{{showRefresh}}"
+>
+  <view class="info">{{text}}</view>
+</scroll-view>
+

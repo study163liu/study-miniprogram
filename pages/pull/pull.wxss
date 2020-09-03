@@ -1,0 +1,23 @@
+page, .wrapper{
+  height: 100%;
+  position: relative;
+}
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: blue;
+  color: #fff;
+  z-index: 2;
+  line-height: 100rpx;
+  text-align: center;
+}
+.info{
+  word-break: break-all;
+  white-space: pre-wrap;
+  height: 2000rpx;
+  background: #ccc;
+  padding-top: 100rpx;
+}

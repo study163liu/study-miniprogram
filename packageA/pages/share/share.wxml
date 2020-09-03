@@ -1,0 +1,8 @@
+<!--pages/share/share.wxml-->
+<view class="container">
+  <view class="title">2个按钮和右上角菜单，分别触发不同分享配置</view>
+  <button class="btn" open-type="share" data-title="分享配置1">分享配置1</button>
+  <button class="btn" open-type="share" data-title="分享配置2">分享配置2</button>
+  <button class="btn" type="primary" bindtap="getImage">保存海报</button>
+  <canvas canvas-id="imageCanvas"></canvas>
+</view>

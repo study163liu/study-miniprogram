@@ -1,0 +1,449 @@
+/* pages/login/login.wxss */
+page {
+  height: 100%;
+  width: 100%;
+} 
+@font-face {
+  font-family: 'HYRunYuan-CEW';
+  font-display: swap;
+  src: url('https://easyreadfs.nosdn.127.net/web/trunk/1560254027861/hyrunyuan.ttf')  format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HYRunYuan-EEW';
+  font-display: swap;
+  src: url('https://easyreadfs.nosdn.127.net/web/trunk/1560254027861/hyrunyuan.ttf')  format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+/* 背景 */
+.login_container {
+  height: 100%;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  font-family: 'HYRunYuan-CEW';
+  overflow: hidden;
+}
+.container_bg_img {
+  top: 37rpx;
+  left: 0;
+  position: absolute;
+  height: 920rpx;
+  width: 1900rpx;
+  display: block;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity: 0.35;
+}
+
+/* 登录 */
+.index {
+  width: 100%;
+  height: 100%;
+  padding-top: 40rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.index_girl_box {
+  width: 372rpx;
+  height: 528rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.index_content_girl {
+  width: 372rpx;
+  height: 528rpx;
+  margin: 0 auto;
+  display: block;
+}
+.index_header {
+  width: 423rpx;
+  height: 67rpx;
+  display: block;
+  margin: 0 auto;
+}
+.index_person_left,
+.index_person_right {
+  opacity: 0.6;
+  width: 147rpx;
+  height: 207rpx;
+  position: absolute;
+  display: block;
+}
+.index_person_left {
+  top: 0;
+  left: -20rpx;
+}
+.index_person_right {
+  top: 20rpx;
+  right: -20rpx;
+  opacity: 0.8;
+}
+.index_soul {
+  display: block;
+  font-size: 32rpx;
+  color: #DE758B;
+  margin-top: 24rpx;
+  text-align: center;
+  margin-bottom: 66rpx;
+  font-family: 'HYRunYuan-CEW';
+  line-height: 40rpx;
+  letter-spacing: 14rpx;
+}
+.index_text {
+  font-size: 24rpx;
+  color: #999999;
+  text-align: center;
+  display: block;
+  margin-bottom: 15rpx;
+  font-family: 'HYRunYuan-CEW';
+}
+.index_pading {
+  padding-bottom: 32rpx;
+}
+.index_text_des {
+  color: #DE758B;
+}
+.index_start {
+  width: 114rpx;
+  height: 114rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.index_login {
+  border: none!important;
+  padding: 0!important;
+  border-radius: 0!important;
+  background: #fff;
+  margin-top: 32rpx;
+}
+.index_login::after {
+  border: none!important;
+}
+.index_start_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: #435A8E;
+}
+.index_content {
+  width: 100%;
+  height: 520rpx;
+  margin-bottom: 62rpx;
+  position: relative;
+}
+.hasSafaArea {
+  bottom: 230rpx!important;
+}
+.index_footer {
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  bottom: 63rpx;
+  transform: translateY(-60rpx);
+}
+.index_footer_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* 书籍选择 */
+.select {
+  box-sizing: border-box;
+  position: relative;
+}
+.select_book_img {
+  display: block;
+  width: 486rpx;
+  height: 120rpx;
+  margin: 40rpx auto 0;
+}
+.select_content {
+  margin-bottom: 145rpx;
+  position: relative;
+}
+.select_swiper_disable {
+  opacity: 0.3;
+}
+.select_swiper {
+  height: 675rpx;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.select_content_img {
+  width: 266rpx;
+  height: 371rpx;
+}
+.select_book_box {
+  width: 266rpx;
+  height: 372rpx;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 64rpx;
+}
+.select_rule {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 38rpx;
+  right: 34rpx;
+}
+.select_qestion_icon {
+  width: 68rpx;
+  height: 68rpx;
+  display: block;
+}
+.select_rule_des {
+  font-size: 24rpx;
+  color: #DE758B;
+  display: block;
+  margin-left: 8rpx;
+}
+.select_book_shadow {
+  width: 17rpx;
+  height: 356rpx;
+  position: absolute;
+  left: 0;
+  top: 15rpx;
+  z-index: 2;
+}
+.select_book_cover {
+  width: 249rpx;
+  height: 356rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.select_bookName {
+  max-width: 440rpx;
+  background: #FFFFFF;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #435A8E;
+  text-align: center;
+  margin: 0 auto 24rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1rpx solid #435A8E;
+  padding: 8rpx 20rpx;
+  z-index: 99;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  transform: translate3d(0,0,0);
+}
+.select_bookName_box {
+  display: flex;
+  justify-content: center;
+} 
+.select_swiper_arrow {
+  width: 29rpx;
+  height: 88rpx;
+  position: absolute;
+  z-index: 9;
+  right: 80rpx;
+  top: 150rpx;
+}
+.select_swiper_left_arrow {
+  width: 29rpx;
+  height: 88rpx;
+  position: absolute;
+  z-index: 9;
+  left: 80rpx;
+  top: 150rpx;
+  transform: rotateY(180deg);
+}
+.select_author_img {
+  width: 18rpx;
+  height: 18rpx;
+}
+.select_author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 27rpx;
+}
+.select_footer {
+  opacity: 0;
+  position: fixed;
+  bottom: 63rpx;
+  transform: translateY(-60rpx);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.select_author_text {
+  font-size: 22rpx;
+  color: #DE758B;
+  margin-left: 11rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.select_text {
+  font-size: 40rpx;
+  color: #435A8E;
+  font-family: 'HYRunYuan-EEW';
+  max-width: 440rpx;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+}
+.select_num {
+  font-size: 24rpx;
+  color: #DE758B;
+  display: block;
+  text-align: center;
+  margin-top: 32rpx;
+  margin-bottom: 59rpx;
+}
+
+/* 动画相关 */
+.transition_effect{
+  transform-style: all;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+}
+.index_person_left.transition_effect{
+  transition-delay: 200ms;
+}
+.index_person_right.transition_effect{
+  transition-delay: 100ms;
+}
+.initial_translate{
+  transform: translate3d(750rpx,0,0);
+}
+.final_translate{
+  transform: translate3d(-750rpx,0,0);
+}
+.index_person_left.final_translate{
+  transition-delay: 0ms;
+}
+.index_person_right.final_translate{
+  transition-delay: 0ms;
+  transform: translate3d(-780rpx,0,0);
+}
+.index_girl_box.animate_shake {
+  animation: shaking 2s linear 1s infinite forwards;
+}
+.index_person_left.animate_shake {
+  animation: opacity 2.4s linear 1s infinite forwards;
+}
+.index_person_right.animate_shake {
+  animation: shaking 2.2s linear 1s infinite forwards;
+}
+/* person_left的晃动动画需要使用margin-top，否则会破坏transitionend事件的执行 */
+@keyframes opacity {
+  0% {
+    opacity: 0.6;
+    margin-top: 0rpx;
+  }
+
+  10% {
+    opacity: 0.64;
+    margin-top: 1rpx;
+  }
+
+  20% {
+    opacity: 0.76;
+    margin-top: 4rpx;
+  }
+
+  30% {
+    opacity: 0.84;
+    margin-top: 6rpx;
+  }
+
+  40% {
+    opacity: 0.96;
+    margin-top: 9rpx;
+  }
+
+  50% {
+    opacity: 1;
+    margin-top: 10rpx;
+  }
+
+  60% {
+    opacity: 0.96;
+    margin-top: 9rpx;
+  }
+
+  70% {
+    opacity: 0.84;
+    margin-top: 6rpx;
+  }
+
+  80% {
+    opacity: 0.76;
+    margin-top: 4rpx;
+  }
+
+  90% {
+    opacity: 0.64;
+    margin-top: 1rpx;
+  }
+
+  100% {
+    opacity: 0.6;
+    margin-top: 0rpx;
+  }
+}
+@keyframes shaking {
+  0% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(1rpx)
+  }
+
+  20% {
+    transform: translateY(4rpx)
+  }
+
+  30% {
+    transform: translateY(6rpx)
+  }
+
+  40% {
+    transform: translateY(9rpx)
+  }
+
+  50% {
+    transform: translateY(10rpx)
+  }
+
+  60% {
+    transform: translateY(9rpx)
+  }
+
+  70% {
+    transform: translateY(6rpx)
+  }
+
+  80% {
+    transform: translateY(4rpx)
+  }
+
+  90% {
+    transform: translateY(1rpx)
+  }
+
+  100% {
+    transform: translateY(0rpx)
+  }
+}
+

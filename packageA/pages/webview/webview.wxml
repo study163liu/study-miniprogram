@@ -1,0 +1,5 @@
+<!--pages/webview/webview.wxml-->
+<web-view  
+  bindmessage="onMessage"
+  src="http://127.0.0.1:3000/study/webview.html?inititalCount={{inititalCount}}#{{isShow}}"
+/>

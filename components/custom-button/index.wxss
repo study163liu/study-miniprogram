@@ -1,0 +1,47 @@
+.whiter {
+  width: 202rpx;
+  height: 79rpx;
+  position: relative;
+}
+
+.whiter_img {
+  width: 202rpx;
+  height: 79rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.whiter_text {
+  position: relative;
+  z-index: 2;
+  font-size: 24rpx;
+  color: #435A8E;
+  display: block;
+  line-height: 79rpx;
+  text-align: center;
+}
+
+.whiter_img {
+  width: 202rpx;
+  height: 79rpx;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.square {
+  width:114rpx;
+  height:114rpx;
+  position:relative;
+  margin:0 auto;
+}
+
+.square_img {
+  width:114rpx;
+  height:114rpx;
+  position:absolute;
+  top:0;
+  left:0;
+}

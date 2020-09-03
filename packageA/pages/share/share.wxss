@@ -1,0 +1,12 @@
+/* pages/share/share.wxss */
+.title{
+  margin: 40rpx 0;
+}
+.btn{
+  margin: 20rpx 0;
+  font-weight: normal;
+}
+canvas{
+  width: 750rpx;
+  height: 1222rpx;
+}

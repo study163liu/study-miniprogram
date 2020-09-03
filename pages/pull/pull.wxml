@@ -1,0 +1,15 @@
+<wxs module="pull" src="./pull.wxs"></wxs>
+<view class="wrapper">
+  <view class="header">固定的头部</view>
+  <scroll-view 
+    class="pulldown-wrapper"
+    bindtouchstart="{{pull.touchStart}}" 
+    bindtouchmove="{{pull.touchMove}}" 
+    bindtouchend="{{pull.touchEnd}}"
+    change:prop="{{pull.monitorShowRefresh}}" 
+    prop="{{showRefresh}}"
+  >
+    <view class="info">{{text}}</view>
+  </scroll-view>
+</view>
+

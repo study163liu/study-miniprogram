@@ -1,0 +1,30 @@
+<import src="booknote.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{firstRendring}}" />
+<scroll-view class="scroller" scroll-y="{{true}}" bindscrolltolower="loadmore">
+  <list-item class="demo-item" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+  <!-- <view class="demo-item" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="index"> -->
+    <view class="booknote_box" id="note_{{index}}">
+      <image src="/images/themelightyellow_ic_quote@3x.png" class="booknote_symbol" />
+      <video
+        style="height: {{item.height}}px"
+        class="video" 
+        src="https://easyreadfs.nosdn.127.net/1592307431971/cat.mp4" 
+        show-center-play-btn='{{false}}' 
+        show-play-btn="{{true}}" 
+        controls
+        picture-in-picture-mode="{{['push', 'pop']}}"
+      ></video>
+      <!-- <view class="booknote_articel" style="height: {{item.height}}px">
+        这是原文内容，高度为{{item.height}}px
+      </view> -->
+      <view class="booknote_remark">
+        <image src="https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eq7Jp0tnGKLRHwVBdDlNZBkMib64HBK8HgYEQpZZmSKW7YsUWGQzia4evtd4iaN8DRmlHcVqLsJicMElA/132" class="booknote_head" />
+        <text class="booknote_item_name">我</text>
+        <text class="booknote_item_remark">: 这是笔记内容{{index}}</text>
+      </view>
+    </view>
+  <!-- </view> -->
+  </list-item>
+  <view class="loading" wx:if="{{loading && !firstRendring}}">加载中...</view>
+  <view class="loading" wx:if="{{noMore}}">没有更多了</view>
+</scroll-view>

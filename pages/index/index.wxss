@@ -1,0 +1,6 @@
+/**index.wxss**/
+.nav{
+  display: block;
+  margin: 30rpx 0;
+  color: blue;
+}
